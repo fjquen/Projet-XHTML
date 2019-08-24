@@ -1,0 +1,1077 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face
+{
+  font-family:'FiraSans-Book';
+  src: url('font/FiraSans-Book.otf');
+}
+
+@font-face
+{
+  font-family:'Roboto-Regular';
+  src: url('font/Roboto-Regular.ttf');
+}
+
+@font-face
+{
+  font-family:'FiraSans-Bold';
+  src: url('font/FiraSans-Bold.otf');
+}
+
+@font-face
+{
+  font-family:'Rubik-Bold';
+  src: url('font/Rubik-Bold.ttf');
+}
+
+@font-face
+{
+  font-family:'Roboto-Bold';
+  src: url('font/Roboto-Bold.ttf');
+}
+
+h2
+{
+
+  font-family: 'FiraSans-Bold';
+  text-align: center;
+  font-size: 50px;
+}
+
+h3
+{
+  font-family:'Roboto-Bold';
+}
+
+p
+{
+  text-align:left;
+  font-family: 'Roboto-Regular';
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+div#service  p.center
+{
+  width: 50%;
+  text-align: center;
+}
+a
+{
+  text-decoration: none;
+  color:inherit;
+}
+
+label
+{
+   font-family:'Roboto-Bold';
+}
+
+div p.center {
+  text-align: center;
+}
+
+#textarea
+{
+  margin-left: 24px
+}
+/*ecartement de logo et menu*/
+#header div.contenu
+{
+  display:flex;
+  justify-content: space-between;
+}
+
+.container
+{
+  width:1422px;
+}
+
+div.fleche
+{
+  font-size: 30px;
+}
+
+
+.fa-angle-left
+{
+  position: absolute;
+  top:15px;
+  left:5px;
+}
+.blackcircleleft
+{
+  height: 60px;
+  width: 30px;
+  min-width: 30px;
+  border-radius: 0px 30px 30px 0px;
+  border: 1px solid rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  color:white;
+  bottom:40%;
+}
+
+
+.fa-angle-right
+{
+position: absolute;
+top: 15px;
+right: 5px;
+}
+.blackcircleright
+{
+  height: 60px;
+  width: 30px;
+  min-width: 30px;
+  border-radius: 30px 0px 0px 30px;
+  border: 1px solid rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  color:white;
+  right: 0px;
+  bottom:40%;
+}
+.contenu 
+{
+  position:fixed;
+  display: flex; 
+  background-color : white;
+  z-index: 5;
+  width:100%;
+  padding:5px 0px 10px 150px;
+  border-bottom:1px solid #0996B3;
+}
+
+#header .nav ul
+{
+  display:flex;
+  justify-content: space-between;
+  font-family:'Roboto-Regular';
+  padding-right: 300px;
+
+}
+
+#header .nav li a
+{
+  display : flex;
+  color : black;
+  text-decoration : none;
+  padding : 10px;
+  padding-top: 30px;
+
+}
+
+#header .nav li a:hover
+{
+  background: #ffffff ;
+  display: flex;
+  line-height: 10px;
+  width:80%;
+  border-top: 3px solid #009ae1;
+  padding-top: 30px;
+  
+}
+
+
+
+#slider figure.slide2
+{
+  display:none;
+
+}
+
+
+#slider
+{
+  position:relative;
+  top:40px;
+}
+#slider img
+{
+  
+  width: 100%;
+}
+
+
+#slider figure
+{
+  display:block;
+}
+
+#slider .child
+{
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  bottom:190px;
+  right:40%;
+  font-family: 'Roboto-Bold';
+  font-size:18px;
+  color:#FFFFFF;
+}
+
+#slider a
+{
+  font-family: 'Roboto-Regular';
+  font-size:20px;
+  color:#FFFFFF;
+  border-radius: 5px;
+  background: #45AED6;
+  width:150px;
+  line-height:50px;
+  text-align: center;
+  border-bottom: 3px  solid #0996B3;
+  padding-bottom:  5px;
+  margin-top: 25px;
+
+}
+#slider .appel a 
+{
+  width: 100%;
+  line-height:30px;
+  padding: 10px;
+}
+
+#header h1
+{
+  margin-bottom: 25px;
+}
+#header span.blue
+{
+  color: #45AED6;
+  font-family:'Roboto-Bold';
+  font-size: 200%;
+  
+  width: 70%;
+}
+
+#header span.white
+{
+  color:#FFFFFF;
+  font-family:'Roboto-Bold';
+  font-size: 100%;
+}
+
+div#service  div.separateur
+{
+  display:flex;
+  width:360px;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+div#service  div.separateur  
+{
+ background-color: #d8d8d8;
+ height: 1px;
+ position:relative;
+ width:150px;
+ margin-bottom: 35px;
+}
+
+div#service 
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 160px;
+  padding-top: 155px;
+  width: 100%;
+}
+
+div#service ul
+{
+  margin-top: 8%;
+}
+
+div#service div.block
+{
+  display: flex;
+  width: 80%;
+}
+
+div#service div.service img
+{
+
+}
+
+
+
+div#service ul li
+{
+  display:flex;
+  width:100%;
+  padding-top: 15px;
+  align-items: center;
+}
+
+div#service ul li div
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+div#service ul li h4
+{
+  width:100%;
+  font-size: 20px;
+ 
+}
+
+.icon
+{
+  display:flex;
+  height: 60px;
+  width: 60px;
+  min-width: 60px;
+  border-radius: 30px;
+  border: 1px solid rgb(217,217,217);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: rgb(92,173,211);
+  margin-bottom: 40px;
+  
+}
+
+.bluecircle
+{
+ 
+  display:block;
+  width:14px;
+  height:14px;
+  background:rgb(92,173,211);
+  border-radius: 50%;
+  border: 1px solid white;
+  bottom: 8px;
+  position: relative;
+}
+div#service ul li .bluecircle
+{
+ position:absolute;
+  top:23px;
+  right:-7px;
+}
+/*ci-dessous l'en-tête de la section projet */
+div#nosprojet 
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #F0F0F0;
+  align-items: center;
+  width: 100%;
+  padding-top: 125px;
+}
+div#nosprojet  div.separateur
+{
+  display:flex;
+  width:360px;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+div#nosprojet  div.separateur  
+{
+ background-color: #d8d8d8;
+ height: 1px;
+ position:relative;
+ width:150px;
+ margin-bottom: 35px;
+}
+/*cette fonction constitue la structure du menu pour le projet*/
+div#nosprojet .menu ol
+{
+  display:flex;
+  font-family:'Roboto-Regular';
+  height: 47px;
+  margin-bottom: 45px;
+  font-size: 15px;
+}
+
+/*cette fonction me permet d'animer le menu*/
+div#nosprojet .menu a
+{
+  background-color: #DBDBDB;
+  text-decoration : none;
+  padding : 14px;
+  color:grey;
+  border-radius:2px;
+
+}
+
+div#nosprojet .menu a:hover 
+{
+  border-radius:2px;
+  background: #ffffff ;
+  width: 100%;
+  background-color:#009ae1;
+  color:  white;
+  border-bottom: 3px solid #468CAD ;
+  align-items:center;
+  padding-top: 16px;
+}
+
+
+/*ci-dessous les differents background avec leur description en css*/
+div#nosprojet .listeprojet
+{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+div#nosprojet li .figure img
+{
+  width: 320px;
+  margin: 0px 20px;
+
+}
+
+div#nosprojet li .figure 
+{
+  position: relative;
+  text-align:center;
+  font-family:'Roboto-Regular';
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+
+
+div#nosprojet ul li  .child
+{
+  display: block;
+}
+.figcaption
+{
+  position: relative;
+  bottom: 75px;
+  width: 78%;
+   color: #F0F0F0;
+  left: 20px;
+  color:transparent;
+  
+}
+div#nosprojet div.figure:hover div.figcaption:hover 
+{
+  color:white;
+  
+  height: 2em;
+  background: rgba(0,0,0,0.8);
+  visibility: visible;
+  overflow: visible;
+  padding: 15px 20px 30px;
+}
+
+
+
+
+
+
+
+
+div#nosprojet div.figure:hover div.figcaption:hover .fa-stack-1x, .fa-stack-2x:hover{
+  bottom: 0px;
+display:flex;
+   position:absolute;
+  left: 250px;
+   bottom:52px;
+   background:rgb(92,173,211);
+   border-radius: 50%;
+   width: 45px;
+   height: 45px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+
+
+
+div#contact
+{
+  position:relative;
+  display:flex;
+  background-image:url("map-0.png");
+  padding-top: 35px;
+  width:100%;
+  justify-content: flex-end; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 810px;
+}
+
+div.saisi
+{
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.6);
+  width:340px;
+  right:150px;
+}
+
+div.saisi ul
+{
+  margin-left: 10px;
+}
+
+div.saisi ul li h4
+{
+  padding:10px 10px 10px 10px;
+  font-size: 25px;
+  font-family:'Roboto-Bold';
+}
+
+div.saisi  ul li p.bold
+{
+  font-weight: bold;
+}
+
+div.saisi  ul li p
+{
+  color:grey;
+  text-align: left;
+  margin:6px;
+  padding-left: 8px;
+}
+
+div.saisi form p
+{
+  margin:10px 22px;
+}
+
+div.saisi input
+{
+  font-family:'Roboto-Bold';
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding-left: 15px;
+  width:246px;
+}
+
+
+div.saisi textarea
+{
+  margin-left: 22px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family:'Roboto-Bold';
+  font-size: 14px;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  resize: both;
+  width : 246px;
+  height : 180px;
+}
+
+
+div.saisi input[type=submit]
+{
+  font-family: 'Roboto-Bold';
+  font-size:12px;
+  color:#FFFFFF;
+  border-radius: 4px;
+  background: #45AED6;
+  width:100px;
+  padding: 5px;
+  text-align: center;
+  border-bottom: 3px  solid #0996B3;
+}
+
+
+/*ce programme ci-dessous est conçu pour la version mobile*/
+
+
+@media all and (max-width: 1440px) 
+{
+  
+  .contenu
+  {
+    padding-bottom: 10px;
+  }
+  #slider .child
+  {
+    font-size: 16px;
+    top:25%;
+    width:70%;
+    left:10%;
+  }
+  #slider a
+  {
+    line-height: 40px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    width:90px;
+  }
+
+  .listeprojet
+  {
+    justify-content: center;
+    align-items: center;
+  }
+
+  div#contact
+  {
+    align-items: center;
+  }
+@media all and (max-width: 1280px) 
+{
+  
+  .contenu
+  {
+    padding-bottom: 10px;
+  }
+  #slider .child
+  {
+    font-size: 16px;
+    top:20%;
+    width:70%;
+    left:10%;
+  }
+  #slider a
+  {
+    line-height: 40px;
+    font-size: 16px;
+    padding-top: 5px;
+    width:90px;
+  }
+
+
+  .listeprojet
+  {
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+}
+
+@media all and (max-width: 1024px) 
+{
+  .contenu
+  {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  #slider
+  {
+    top:70px;
+  }
+  #slider .child
+  {
+    font-size: 16px;
+    top:20%;
+    width:70%;
+    left:10%;
+  }
+  #slider a
+  {
+    line-height: 40px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width:90px;
+  }
+
+  .blackcircleleft,.blackcircleright
+  {
+    top:40%;
+  }
+
+
+div#service div.block
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div#nosprojet .listeprojet
+  {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div#saisi
+  {
+   margin-top: 50px;
+  }
+  
+}
+
+@media all and (max-width: 980px)
+{
+  .contenu
+  {
+    padding-bottom: 10px;
+  }
+  #slider .child
+  {
+    font-size: 12px;
+    top:20%;
+    left:10%;
+    width:80%;
+  }
+   #slider a
+  {
+    line-height: 25px;
+    font-size: 12px;
+    padding-top: 5px;
+    width:65px;
+  }
+  div p.center
+  {
+  width: 80%;
+  }
+
+  .blackcircleleft,.blackcircleright
+  {
+  top:40%;
+  }
+}
+@media all and (max-width: 840px)
+{
+  .contenu
+    {
+      padding:0px 45px 0px 0px;
+    }
+   #slider
+   {
+    top:60px;
+   }
+  #slider .child
+  {
+    font-size: 12px;
+    top:20%;
+    left:10%;
+    width:65%;
+  }
+
+  #slider a
+  {
+    line-height: 25px;
+    font-size: 12px;
+    padding-top: 5px;
+    width:65px;
+  }
+  .blackcircleleft,.blackcircleright
+  {
+  top:40%;
+  }
+
+ div#service
+  {
+    margin-top: 0px; 
+  }
+
+  @media all and (max-width: 670px)
+  {
+    .contenu
+    {
+      padding-bottom: 10px;
+    }
+    #slider
+    {
+      width:100%;
+    }
+
+    #slider .child 
+  {
+     font-size: 10px;
+    top:15%;
+    left:8%;
+    width: 500px;
+  }
+  #slider a
+  {
+    line-height: 20px;
+    font-size: 12px;
+    padding-top: 5px;
+    width:75px;
+  }
+  div#service
+  {
+    
+    margin-top: 0px;
+    
+    
+  }
+}
+@media all and (max-width: 580px)
+{
+  .contenu
+  {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .contenu .nav ul
+  {
+    padding-left:130px;
+  }
+  #slider
+  {
+    top:130px;
+  }
+  #slider .child
+  {
+    font-size: 10px;
+    top:15%;
+    left:10%;
+    width: 500px;
+  }
+  
+  #slider a
+  {
+    line-height: 30px;
+    font-size: 12px;
+    padding-top: 5px;
+    width:75px;
+  }
+  .blackcircleleft,.blackcircleright
+  {
+  top:29%;
+  }
+  div#service
+  {
+    
+    margin-top: 40px;
+    
+  }
+
+  div#nosprojet
+  {
+    padding-top: 180px;
+  }
+  div#saisi
+  {
+    margin-top: 120px;
+  }
+}
+@media all and (max-width: 480px)
+{
+
+  
+   .contenu
+   {
+    height:8%;
+    padding-bottom: 75px;
+   }
+
+   div#slider 
+   {
+    top:128px;
+   }
+  .contenu .nav ul
+  {
+    padding-left: 50px;
+  }
+
+  div#slider .child
+  {
+    font-size: 8px;
+    top:9%;
+    width: 300px;
+  }
+  .blackcircleleft,.blackcircleright
+  {
+  top:30%;
+  }
+  div#slider a
+  {
+    line-height: 10px;
+    font-size: 8px;
+    width:45px;
+  }
+    div.service img
+{
+  width: 100%;
+}
+  div#contact
+  {
+    padding-bottom: 0px;
+  }
+  div#saisi
+  {
+    width:85%;
+  }
+  div.saisi
+  {
+    right: 30px;
+  }
+
+  @media all and (max-width: 380px)
+  {
+
+    .contenu
+    {
+      height: 10%;
+      width: 100%;
+      padding-bottom: 64px;
+    }
+
+    .contenu .nav ul
+  {
+    padding-left: 16px;
+  }
+  #slider
+  {
+    top:128px;
+  }
+
+  #slider .child
+  
+  {
+    font-size: 8px;
+    top:12%;
+  }
+
+  
+  #slider a
+  {
+    line-height: 8px;
+    font-size: 8px;
+    width:50px;
+    padding:4px;
+    margin-top: 12px;
+  }
+
+  div#service h2
+  {
+    font-size: 30px;
+  }
+
+  p.center
+  {
+    font-size: 13px;
+  }
+
+   div.separateur hr
+  {
+    width:80px;
+  }
+ div.separateur
+  {
+    width:200px;
+  }
+
+  div#nosprojet li .figure
+  {
+    width: auto;
+  }
+  div.saisi
+  {
+    left: 0;
+    margin-left: 10px;
+  }
+  
+
+   div#nosprojet h2
+  {
+    font-size: 30px;
+  }
+
+  @media all and (max-width: 320px)
+  {
+
+    h1
+    {
+      width: 80%; 
+    }
+    #slider .child
+  {
+    font-size: 6.5px;
+    top:20%;
+    width:auto;
+    right: 10px;
+  }
+  #slider .child .texte
+  {
+    display:none;
+  }
+  #slider a
+   {
+    position: absolute;
+    top:30px;
+   }
+  
+  .contenu
+  {
+    height:13.5%;
+  }
+
+  div#nosprojet .menu ol
+  {
+    font-size: 12px;
+  }
+
+  
+  div#nosprojet  li .figure
+  {
+    width: auto;
+  }
+  div#nosprojet  li .figure img
+  {
+    width:250px;
+  }
+  div.saisi
+  {
+    width:300px;
+  }  
+  }}}}}
